@@ -1,0 +1,160 @@
+/* Reset default styles for all elements */
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+/* Body styling - background color */
+body{
+    background: #001e4d;
+}
+/* Main app container styling */
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+/* Styling for the title */
+.app h1{
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+/* Styling for quiz section */
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+/* Styling for the answer buttons */
+.btn{
+     background: #fff;
+     color: #222;
+     font-weight: 500;
+     width: 100%;
+     border: 1px solid #222;
+     padding: 10px;
+     margin: 10px 0;
+     text-align: left;
+     border-radius: 4px;
+     cursor: pointer;
+}
+.btn:hover:not([disabled]){
+    background: #222;
+    color: #fff;
+}
+/* Disabled button style */
+.btn:disabled{
+    cursor:no-drop;
+}
+#next-btn{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+
+}
+ .correct{
+    background: #9aeabc; 
+}
+.incorrect{
+    background: #ff9393;
+}
+
+/* For small devices (smartphones) */
+@media (max-width: 600px) {
+    .app {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .app h1 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .quiz h2 {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #next-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* For medium devices (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .app {
+        margin: 50px auto;
+        padding: 25px;
+    }
+
+    .app h1 {
+        font-size: 22px;
+    }
+
+    .quiz h2 {
+        font-size: 17px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #next-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+/* For large devices (desktops) */
+@media (min-width: 1025px) {
+    .app {
+        width: 60%;  /* Take up 60% of the page width */
+        max-width: 800px;  /* Maximum width */
+        margin: 100px auto;
+    }
+
+    .app h1 {
+        font-size: 25px;
+    }
+
+    .quiz h2 {
+        font-size: 18px;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    #next-btn {
+        width: 150px;
+        padding: 12px;
+        font-size: 18px;
+    }
+}
